@@ -1,7 +1,7 @@
 <template lang="html">
-<div>
-    <h1>{{name}}</h1>
-    <div class="more">
+<div @click='hideOrShow()' style="border:solid">
+    <h2>{{name}}</h2>
+    <div class="more" v-show='isActive' style = "background : #d9dbd3 ; border:solid" >
         <p><strong>Book : </strong>{{book}}</p>
         <p><strong>School : </strong>{{school}}</p>
         <div>
@@ -87,5 +87,15 @@ export default {
             default : ""
         }
     },
+    data () {
+        return{
+            isActive : false
+        }
+    },
+    methods : {
+        hideOrShow(){
+            this.isActive = !this.isActive;
+        }
+    }
 }
 </script>

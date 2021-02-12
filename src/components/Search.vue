@@ -49,7 +49,9 @@
         },
         updated(){
             this.titles = localStorage.getItem("books");
-            console.log("callled updated")
+            var test = this.titles.split(",");
+            console.log("test = "+test);
+            console.log("titles = "+typeof(this.titles));
         }
     }
 </script>
