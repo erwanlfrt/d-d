@@ -10,7 +10,7 @@
         </div>
         <div>
             <p><strong>Class : </strong></p>
-            <p v-for='c in classGame'>{{c}}</p>
+            <p v-for='c in classGame'>class : {{c[0]}} -> level : {{c[1]}}</p>
         </div>
         <div>
             <p><strong>Components : </strong></p>

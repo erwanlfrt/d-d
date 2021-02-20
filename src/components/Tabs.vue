@@ -13,15 +13,15 @@
 export default {
   data () {
     return {
-      selectedIndex: 0, // the index of the selected tab,
-      tabs: []         // all of the tabs
+      selectedIndex: 0,
+      tabs: []         
     }
   },
   created () {
     this.tabs = this.$children
   },
   mounted(){
-      this.selectTab(0);
+      this.selectTab(0); //default, select the tab n°0
   },
   methods : {
       selectTab(i){

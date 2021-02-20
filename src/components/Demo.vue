@@ -9,7 +9,6 @@
 </template>
 
 <script>
-import Tab from './Tab.vue'
 import Tabs from './Tabs.vue'
 import Configuration from './Configuration.vue'
 import Search from "./Search.vue"

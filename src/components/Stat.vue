@@ -37,6 +37,9 @@
             this.spells = this.countSpells();
         },
         methods : {
+            /**
+             * Count the number of book
+             */
             countBooks(){
                 var cpt = 0;
                 var titles = [];
@@ -48,9 +51,15 @@
                 }
                 return cpt;
             },
+            /**
+             * Count the number of spells
+             */
             countSpells(){
                 return this.arr.length;           
             },
+            /**
+             * Count the number of spells per book
+             */
             countSpellsInBooks(){
                 var res = new Map();
                 for(let i=0 ; i<this.arr.length ; i++){
